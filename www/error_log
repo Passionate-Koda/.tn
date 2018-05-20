@@ -1,0 +1,399 @@
+[12-Apr-2018 16:09:41 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:11) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 16:09:41 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:09:44 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:11) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 16:09:44 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:37:18 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:37:20 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:37:23 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:40:20 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:40:23 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:48:21 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 16:48:24 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:09:33 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:09:36 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:07 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:10 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:12 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:15 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:17 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:21 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:49 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:52 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:54 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:10:57 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:13:10 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:13:13 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:13:16 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:13:19 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:24:08 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:24:08 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:24:17 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:24:17 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:24:48 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:24:48 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:24:50 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:24:50 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:25:30 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:25:34 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:25:37 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:26:02 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:26:02 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:26:05 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:26:05 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:27:32 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:27:32 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:27:38 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:27:38 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:27:38 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:27:38 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:27:41 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:27:41 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:31:38 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:31:38 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 17:31:41 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 17:31:41 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 18:41:14 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 18:41:14 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 18:41:18 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 18:41:18 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 18:56:20 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 18:56:20 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 18:56:20 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 19:11:08 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 19:11:08 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 19:19:51 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 19:19:51 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 19:19:53 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 19:19:53 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 19:22:03 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 19:22:03 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 19:22:04 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[12-Apr-2018 19:22:04 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[12-Apr-2018 23:05:57 Africa/Lagos] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/mckodevc/tunse_view/tworkers/tworkersDashboard.php on line 14
+[13-Apr-2018 08:19:33 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/interface_db.php:11) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[13-Apr-2018 08:19:33 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:348
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(246): getState(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 348
+[13-Apr-2018 08:19:36 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/interface_db.php:11) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[13-Apr-2018 08:19:36 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:348
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(246): getState(NULL)
+#1 /home/mckodevc/tunse_route/router.php(80): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 348
+[13-Apr-2018 09:31:07 Africa/Lagos] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/mckodevc/tunse_view/tworkers/contact.php on line 10
+[13-Apr-2018 10:06:28 Africa/Lagos] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/mckodevc/tunse_view/public/ajax_users_requests/get_message.php on line 3
+[13-Apr-2018 10:06:28 Africa/Lagos] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/mckodevc/tunse_view/public/ajax_users_requests/get_message.php on line 6
+[13-Apr-2018 22:39:14 Africa/Lagos] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/mckodevc/tunse_view/tworkers/tworkersDashboard.php on line 14
+[15-Apr-2018 01:07:11 Africa/Lagos] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Net_SMTP has a deprecated constructor in /opt/cpanel/ea-php70/root/usr/share/pear/Mail/Net/SMTP.php on line 37
+[15-Apr-2018 02:07:34 Africa/Lagos] PHP Warning:  extract() expects parameter 1 to be array, boolean given in /home/mckodevc/tunse_view/tworkers/c_reg.php on line 14
+[18-Apr-2018 22:23:06 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[18-Apr-2018 22:23:06 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[18-Apr-2018 22:23:06 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
+[18-Apr-2018 23:38:17 Africa/Lagos] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mckodevc/tunse_models/entity_db.php:12) in /home/mckodevc/tunse_view/public/tunsehome.php on line 3
+[18-Apr-2018 23:38:17 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/mckodevc/tunse_controllers/tworker_controller.php:357
+Stack trace:
+#0 /home/mckodevc/tunse_view/public/tunsehome.php(190): getSkill(NULL)
+#1 /home/mckodevc/tunse_route/router.php(72): include('/home/mckodevc/...')
+#2 /home/mckodevc/tunse.mckodev.com.ng/index.php(13): require('/home/mckodevc/...')
+#3 {main}
+  thrown in /home/mckodevc/tunse_controllers/tworker_controller.php on line 357
