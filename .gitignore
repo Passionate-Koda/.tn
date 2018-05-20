@@ -14,3 +14,9 @@ tunse_controllers.tar.gz
 www/tunse@secure
 www/cgi-bin
 www/www.tunse.co
+.vagrant
+larastead
+Vagrantfile
+www/phpmyadmin
+.tn
+www/asset.tar.gz
