@@ -30,6 +30,31 @@ include 'includes/header.php';
                  <!-- /content-control -->
 
                  <div class="content-body">
+                   <?php
+                   $stmt=$econn->prepare("SELECT
+  *, (
+    3959 * acos (
+      cos ( radians($latitude) )
+      * cos( radians( tworkers_lat ) )
+      * cos( radians( tworkers_long ) - radians($longitude) )
+      + sin ( radians($latitude) )
+      * sin( radians( tworkers_lat ) )
+    )
+  ) AS distance
+FROM tworkers
+HAVING distance < 1000
+ORDER BY distance
+DESC
+LIMIT 0 , 20");
+$stmt->execute();
+
+while($row= $stmt->fetch(PDO::FETCH_BOTH)){
+  echo $row['tworkers_firstname'].' '.$row['tworkers_surname'].$row['distance']."<br>";
+}
+
+
+                    ?>
+
 
 
 

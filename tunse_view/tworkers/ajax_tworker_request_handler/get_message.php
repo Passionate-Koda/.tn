@@ -6,6 +6,9 @@
   $getInfo = getTworker($econn, $_POST['session']);
   extract($getInfo);
 
+  $getUInfo = getUser($econn, $_POST['receiver']);
+  extract($getUInfo);
+
 $Username = ucfirst($tworkers_firstname);
 
 
@@ -19,7 +22,6 @@ $Username = ucfirst($tworkers_firstname);
       <small>No Message Sent</small>
       </li>';
     }else{
-
       while($row = $state->fetch(PDO::FETCH_BOTH)){
         extract($row);
         $sender = substr($sender_alias, 0, 1);
@@ -39,7 +41,7 @@ echo '<li class="chat-box float-right">
   <div style="display:block; clear:both"></div>';
 }else{
   echo  '  <li class="chat-box float-left">
-      <div class="chat-avater float-left" style="background-image: url(\'asset/images/dummy/0c31c9dc.profile.jpg\')">
+      <div class="chat-avater float-left" style="background-image: url('.$image.')">
       </div>
       <div class="msg float-left radius-left">
         <div class="text">

@@ -1,4 +1,5 @@
 <?php
+
 ob_start();
 session_start();
 authenticateTworker('myDashboard');
@@ -33,7 +34,7 @@ include 'includes/header.php';
 
                  <div class="content-body">
                    <div class="callout callout-success">
-                       
+
                        <?php
                        if(isset($_GET['msg'])){
           $msg = str_replace('_', ' ', $_GET['msg']);
@@ -46,7 +47,7 @@ include 'includes/header.php';
         echo  "<div class=\"alert alert-success\" role=\"alert\">
 					<strong>Successful! </strong>$msg
 				</div>";
-        } 
+        }
                        ?>
 
                      <?php if($tworkers_dob == NULL){?>

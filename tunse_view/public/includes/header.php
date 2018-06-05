@@ -81,14 +81,20 @@ if($page == "home"){    ?>
                         <li><a href="ulogout"><i class="fa fa-sign-out"></i> Log Out</a></li>
                     </ul>
                 </div>
-                <div class="profile-picture" style="background-image:url('asset/images/dummy/0c31c9dc.profile.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
+                <?php if($image == NULL){
+                  $image = "asset/images/dummy/0c31c9dc.profile.jpg";
+                } ?>
+                <div onclick="window.location='changeUpics'" class="profile-picture" style="background-image:url(<?php echo $image ?>); background-size:cover; background-position:center; background-repeat:no-repeat;">
                     <!-- <img alt="me" src="asset/images/dummy/0c31c9dc.profile.jpg"> -->
+
                 </div>
+
+
             </div><!-- header-profile -->
 
             <!-- header menu -->
             <ul class="hidden-xs header-menu pull-right">
-            
+
                 <li>
                     <a href="#" title="Notifications" class="dropdown-toggle" data-toggle="dropdown" role="button">
                         <span id="notCnt" class="badge badge-success">0</span>

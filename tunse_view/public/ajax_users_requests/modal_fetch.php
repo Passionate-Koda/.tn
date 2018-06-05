@@ -45,27 +45,7 @@ $Username = ucfirst($username);
 
             echo  "</div></div>";
             echo "<div class=\"modal-body about\">";
-            // echo "<div class=\"login-top cars sign-top one\">";
-            //     echo    "<h4>$name</h4>
-            //         <h5>$tworkers_description</h5>";
-            //
-            //         echo "<img src=\"$tworkers_image\" alt=\"$name\" style=\" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 350px;max-width: 350px;\">";
-            //         echo "<div class=\"car-form-pop\">";
-            //           echo "<p><span>Available</span></p>
-            //           <div class=\"location1\">
-            //         <p>Location: <span>$tworkers_lga</span></p>
-            //           </div>
-            //           <form  action=\"#\" method=\"post\">
-            //           <input type=\"hidden\" id=\"$tworkers_hashid\" value=\"$tworkers_hashid\">
-            //           <div class=\"input\">
-            //           <label for=\"brand2\"><span></span>Send a task to $name</label>
-						// 					<textarea class= spellcheck=\"false\" name=\"email_message\" rows=\"8\" cols=\"50\"></textarea>
-						// 					</div>
-            //             <div class=\"send-button\">
-            //               <input   type=\"submit\" onclick=\"sendTask(this.form.elements[0].id,'$sess',this.form.elements[1].value,'$Username','$skill');this.form.reset()\" name=\"sentTask\" value=\"SEND TASK\">
-            //             </div>
-            //           </form>
-            //         </div>
+
             echo '<div class="" style="text-align: center">
             <h3>'.$name.'</h3>
             <p class="text-success">Location: <span>'.$tworkers_lga.'</span></p>
@@ -90,15 +70,9 @@ $Username = ucfirst($username);
                                    <input class=\"form-control\"   type=\"button\" onclick=\"sendTask(this.form.elements[0].id,'$sess',this.form.elements[1].value,'$Username','$skill','$tworkers_hashid');this.form.reset()\" name=\"sentTask\" value=\"SEND TASK\">
                                  </div>
                                </form>";
-
-
-
-
                 echo '</div>'; //div center end
                 echo "</div>
                 </div>
-
-
               </div>
             </div>
           </div>";

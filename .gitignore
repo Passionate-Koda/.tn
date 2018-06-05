@@ -20,3 +20,8 @@ Vagrantfile
 www/phpmyadmin
 .tn
 www/asset.tar.gz
+tunse_models/entity_db.php
+tunse_models/interface_db.php
+tunse_models/archive_db.php
+www/uploads
+

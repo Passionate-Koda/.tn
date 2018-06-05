@@ -23,6 +23,8 @@ $email = $_POST['email'];
 
      $firtsname = $_POST['firstname'];
      $lastname = $_POST['surname'];
+     $clean = array_map('trim', $_POST);
+      $red = registerTworker($econn, $clean);
 
 
 
@@ -104,8 +106,6 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    $clean = array_map('trim', $_POST);
-     $red = registerTworker($econn, $clean);
      $hid = $red[0];
      $token = $red[1];
     echo 'Message has been sent';

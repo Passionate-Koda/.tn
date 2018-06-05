@@ -104,6 +104,14 @@ switch($uri[1]){
   include APP_PATH."/tunse_view/tworkers/tworkers_home.php";
   break;
 
+  case "changeUpics":
+  include APP_PATH."/tunse_view/public/profile_picture.php";
+  break;
+
+  case "changeTpics":
+  include APP_PATH."/tunse_view/tworkers/profile_picture.php";
+  break;
+
   case "viewMap":
   include APP_PATH."/tunse_view/tworkers/view_location.php";
   break;
@@ -134,15 +142,18 @@ switch($uri[1]){
 
   case "tworkersVerification?hid=$hidValue&token=$tokenValue":
   include APP_PATH."/tunse_view/verify.php";
-  break;  
-  
+  break;
+
+  case "usersVerification":
+  include APP_PATH."/tunse_view/userverify.php";
+  break;
   case "usersVerification?hid=$hidValue&token=$tokenValue":
   include APP_PATH."/tunse_view/userverify.php";
-  break;  
-  
+  break;
+
   case "ulogout":
   include APP_PATH."/tunse_view/ulogout.php";
-  break;  
+  break;
   case "tlogout":
   include APP_PATH."/tunse_view/tlogout.php";
   break;
@@ -290,6 +301,10 @@ switch($uri[1]){
 
   case "addContact":
   include APP_PATH."/tunse_view/public/ajax_users_requests/add_contact.php";
+  break;
+
+  case "addDirectory":
+  include APP_PATH."/tunse_view/public/ajax_users_requests/add_directory.php";
   break;
 
   case "sendMessage":

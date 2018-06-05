@@ -37,7 +37,6 @@ var_dump($count);
 if($count>0){
 $msg = "You have already added this Contact, Please Check Your <a href=\"contact\">Directory</a>";
 var_dump($msg);
-
 }else{
 $stmt = $econn->prepare("INSERT INTO contacts VALUES(NULL,:co, :cc, :ctype,:cname,:cphone,:chash,NOW(),NOW())");
 $stmt->bindParam(":co", $_POST['contactOwner']);

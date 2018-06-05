@@ -28,6 +28,16 @@ extract($client_info);
 $uname = ucwords($tworkers_firstname);
 $page = "chat";
 include 'includes/header.php';
+if(array_key_exists("submit",$_POST)){
+$error = [];
+if(empty($_POST['review'])){
+  $error['review'] = "Please Enter Review";
+}
+if(empty($error)){
+  $clean = array_map('trim', $_POST);
+  enterReview($econn,$clean,$sid,$tworkers_hashid);
+}
+}
 ?>
 
 <input type="hidden" id="session" name="" value="<?php echo $sid ?>">
@@ -35,6 +45,77 @@ include 'includes/header.php';
   <!-- <?php// include 'includes/task_tab.php' ?> -->
   <!-- content-control -->
   <div class="content-control">
+  <style>
+/*
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+
+* {
+margin: 0;
+padding: 0;
+font-family: roboto;
+}
+*/
+
+
+
+.cont {
+width: 93%;
+max-width: 350px;
+text-align: center;
+margin: 4% auto;
+padding: 30px 0;
+background: #111;
+color: #EEE;
+border-radius: 5px;
+border: thin solid #444;
+overflow: hidden;
+}
+
+hr {
+margin: 20px;
+border: none;
+border-bottom: thin solid rgba(255,255,255,.1);
+}
+
+div.title { font-size: 2em; }
+
+
+
+div.stars {
+width: 270px;
+display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+float: right;
+padding: 10px;
+font-size: 36px;
+color: #444;
+transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+content: '\f005';
+color: #FD4;
+transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+color: #FE7;
+text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.star:before {
+content: '\f006';
+font-family: FontAwesome;
+}
+</style>
 
 
 
@@ -68,6 +149,56 @@ include 'includes/header.php';
             <h3><span class="flaticon-user"><span><?php echo $uname ?></h3>
 
           </div>
+          <div class="title-name" style="left:70%">
+            <button class="btn btn-default" data-toggle="modal" data-target="#customModal2">Review</button>
+          </div>
+          <div class="title-name" style="left:30%">
+            <?php
+            $cidd = getContactID($econn,$_GET['s'],$_GET['r']);
+             echo '<button class="btn btn-default"><a href="contact?o='.$_GET['s'].'&t='.$_GET['r'].'&i='.$cidd.'">View Info<a/></button>' ?>
+          </div>
+
+
+          <div class="modal modal-center modal-fullwidth fade" id="customModal2" tabindex="-1" role="dialog" aria-labelledby="customModal2Label" aria-hidden="true">
+            <div  class="modal-dialog animated bounceIn">
+              <div class="modal-content bg-darknight">
+                <div class="modal-body text-white">
+                  <div class="" style="text-align: center">
+                    <hr>
+                    <p><img style=" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 350px;max-width: 350px;" src="<?php echo $tworkers_image ?>" style="height: 100px; width: 150px" class="img-responsive" alt="Fountain" class="img-rounded img-responsive"></p>
+                    <hr>
+                    <h1>Rate Tworker</h1>
+                    <form action="" method="post">
+                    <div class="cont">
+                      <div class="stars">
+
+                          <input class="star star-5" id="star-5-2" type="radio" name="star" value="5" required/>
+                          <label class="star star-5" for="star-5-2"></label>
+                          <input class="star star-4" id="star-4-2" type="radio" name="star" value="4" required/>
+                          <label class="star star-4" for="star-4-2"></label>
+                          <input class="star star-3" id="star-3-2" type="radio" name="star" value="3" required/>
+                          <label class="star star-3" for="star-3-2"></label>
+                          <input class="star star-2" id="star-2-2" type="radio" name="star" value="2" required/>
+                          <label class="star star-2" for="star-2-2"></label>
+                          <input class="star star-1" id="star-1-2" type="radio" name="star" value="1" required/>
+                          <label class="star star-1" for="star-1-2"></label>
+
+                      </div>
+
+                    </div>
+                    <div class="cont">
+                    <textarea class="form-control" name="review" rows="8" cols="auto" required></textarea>
+                    <input class="form-control" type="submit" name="submit" value="Review">
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+
+
+
 
 
         </div>

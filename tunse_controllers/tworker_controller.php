@@ -16,6 +16,52 @@ function doesEmailExist($dbconn, $input){
   }
   return $result;
 }
+function getContactID($dbconn, $co,$chid){
+
+  $state = $dbconn->prepare("SELECT * FROM contacts WHERE contact_owner = :sid AND contact_hash_id = :chid");
+  $state->bindParam(":sid", $co);
+  $state->bindParam(":chid", $chid);
+  $state->execute();
+  while($row = $state->fetch(PDO::FETCH_BOTH)){
+  extract($row);
+  $result = $contact_id;
+  }
+  return $result;
+}
+
+function enterReview($dbconn,$post,$uid,$tid){
+  try{
+  $stmt = $dbconn->prepare("INSERT INTO review VALUES(NULL,:tid,:rt,:rv,:uid)");
+  $data = [
+    ":tid" =>$tid,
+    ":rt" => $post['star'],
+    ":rv" => $post['review'],
+    ":uid"=> $uid
+  ];
+  $stmt->execute($data);
+}catch(PDOException $e){
+  die("We cannot post this Review at this time, Please Try again");
+}
+
+$totalrate = 0;
+$rate = 0;
+$stmt2 = $dbconn->prepare("SELECT * FROM review WHERE tworkers_hash_id=:thid");
+$data2= [
+  ":thid"=> $tid
+];
+$stmt2->execute($data2);
+while($row = $stmt2->fetch(PDO::FETCH_BOTH)){
+extract($row);
+$rate +=  $rating;
+$totalrate = $rate / $stmt2->rowCount();
+
+}
+
+$stmt3 = $dbconn->prepare("UPDATE tworkers SET tworkers_rating=:trt WHERE tworkers_hashid=:hid ");
+$stmt3->bindParam(":trt",$totalrate);
+$stmt3->bindParam(":hid",$tid);
+$stmt3->execute();
+}
 
 function decodeDate($date){
   $split = explode('-',$date);
@@ -59,9 +105,7 @@ function decodeDate($date){
   if($month == 12 ){
     $month = "December";
   }
-
   $newDate = $month.' '.$day.', '.$year;
-
   return $newDate;
 }
 
@@ -266,6 +310,47 @@ function loginTworker($dbconn, $input){
   }
 }
 
+function changeProfilePictures($dbconn, $destn,$hid){
+  $getInfo = getUser($dbconn, $hid);
+  $img = $getInfo['image'];
+  try{
+    $stmt = $dbconn->prepare("UPDATE client SET image=:bd WHERE hash_id =:hid");
+    $data = [
+      ":bd"=>$destn,
+      ":hid"=> $hid
+    ];
+    $stmt->execute($data);
+  }catch(PDOException $e ){
+    die("Upload Fail, Please Try Again Later");
+  }
+  if($img !== NULL){
+      unlink($img);
+  }
+  header("Location:dashboard");
+
+
+}
+
+function changeTProfilePictures($dbconn, $destn,$hid){
+  $getInfo = getTworker($dbconn,$hid);
+  $img = $getInfo['tworkers_image'];
+
+  try{
+    $stmt = $dbconn->prepare("UPDATE tworkers SET tworkers_image=:bd WHERE tworkers_hashid =:hid");
+    $data = [
+      ":bd"=>$destn,
+      ":hid"=> $hid
+    ];
+    $stmt->execute($data);
+  }catch(PDOException $e ){
+    die("Upload Fail, Please Try Again Later");
+  }
+  if($img !== NULL){
+      unlink($img);
+  }
+  header("Location:myDashboard");
+}
+
 function getTworker($dbconn, $sess){
   $stmt = $dbconn->prepare("SELECT * FROM tworkers WHERE tworkers_hashid = :th");
   $stmt->bindParam(':th', $sess);
@@ -415,7 +500,7 @@ function getNewInfo($dbconn, $input, $getNum ){
   $setLoginDetail->bindParam(":pk", $input['phonenumber']);
   $setLoginDetail->bindParam(":hs", $hash);
   $setLoginDetail->execute();
-  
+
    $vran = rand(0000000000,999999999);
   $process = $vran.$input['email'];
   $token = str_shuffle($process);
