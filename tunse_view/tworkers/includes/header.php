@@ -62,7 +62,7 @@
                 <a data-pjax=".content-body" href="index.php">
                     <img class="brand-logo" src="asset/images/dummy/logo2.png" alt="Tunse Logo">
                 </a>
-              
+
             </div><!-- header brand -->
 
             <!-- header-profile -->
@@ -80,14 +80,17 @@
                         <li><a href="tlogout"><i class="fa fa-sign-out"></i> Log Out</a></li>
                     </ul>
                 </div>
-                <div class="profile-picture" style="background-image:url(<?php echo $tworkers_image ?>); background-size:cover; background-position:center; background-repeat:no-repeat;">
+                <?php if($tworkers_image == NULL){
+                  $tworkers_image = "asset/images/dummy/0c31c9dc.profile.jpg";
+                } ?>
+                <div onclick="window.location='changeTpics'" class="profile-picture" style="background-image:url(<?php echo $tworkers_image ?>); background-size:cover; background-position:center; background-repeat:no-repeat;">
                     <!-- <img alt="me" src="<?php// echo $tworkers_image ?>"> -->
                 </div>
             </div><!-- header-profile -->
 
             <!-- header menu -->
             <ul class="hidden-xs header-menu pull-right">
-             
+
                 <li>
                     <a href="#" title="Notifications" class="dropdown-toggle" data-toggle="dropdown" role="button">
                         <span id="notCnt" class="badge badge-success">0</span>

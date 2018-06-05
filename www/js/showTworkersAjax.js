@@ -1,6 +1,14 @@
 
 var ready_id, str, sess, val;
+var slid = document.getElementById("display_adjustment");
+// var rang = document.getElementById("myRange");
 
+// rang.addEventListener('input',function(e){
+//     slid.innerHTML= rang.value+"km";
+// },false);
+function getV(val){
+  slid.innerHTML = val+"km";
+}
 
 
 function getElem(str){
@@ -9,13 +17,15 @@ function getElem(str){
 
 
 function getWorkers(str){
-  var url = 'fetchRequest?get='+ str;
-  var method = 'GET';
+  var url = 'fetchRequest?get=nil';
+  var method = 'POST';
+  var params = 'session='+ document.getElementById('session').value;
+  params += '&skill_id='+ document.getElementById('skill_id').value;
   // var params = 'state=' + document.getElementById('stateid').value;
-  showWorker(url,method,str);
+  showWorker(url,method,params);
   ////console.log(url);
 }
-function showWorker(url, method){
+function showWorker(url, method,params){
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function(){
     if(xhr.readyState == 4){
@@ -24,9 +34,49 @@ function showWorker(url, method){
   }
   xhr.open(method, url, true);
   xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-  var sd = xhr.send();
+  var sd = xhr.send(params);
 
 }
+
+function getSWorkers(str){
+
+
+if(str == "distance"){
+  var dis = "'distance'";
+  document.getElementById("filter").value = 30;
+  document.getElementById("display_adjustment").innerHTML = document.getElementById("filter").value +"km";
+  document.getElementById("filter").innerHTML='<input oninput="getV(this.value)" onchange="getAWorkers(this.value,'+dis+')" type="range" min="1" max="100" value="1" class="slider" id="myRange">';
+}else{
+var dis = "'rating'";
+document.getElementById("filter").value = 30;
+document.getElementById("display_adjustment").innerHTML= document.getElementById("filter").value+ "km";
+document.getElementById("filter").innerHTML='<input oninput="getV(this.value)"" onchange="getAWorkers(this.value,'+dis+')" type="range" min="1" max="100" value="1" class="slider" id="myRange">';
+}
+
+  var url = 'fetchRequest?get=nil';
+  var method = 'POST';
+  var params = 'session='+ document.getElementById('session').value;
+  params += '&skill_id='+ document.getElementById('skill_id').value;
+  params += '&'+str+'=true';
+
+  // var params = 'state=' + document.getElementById('stateid').value;
+  showWorker(url,method,params);
+  console.log(str);
+}
+
+function getAWorkers(str,filter){
+  var url = 'fetchRequest?get=nil';
+  var method = 'POST';
+  var params = 'session='+ document.getElementById('session').value;
+  params += '&skill_id='+ document.getElementById('skill_id').value;
+  params += '&range='+str;
+  params += '&'+filter+'=true';
+  // var params = 'state=' + document.getElementById('stateid').value;
+  showWorker(url,method,params);
+  // console.log(str);
+  // console.log(filter);
+}
+
 
 function getWorkersModal(str){
   var url = 'fetchModal';
@@ -62,15 +112,8 @@ function sendTask(ready_id,sess,val,uname,catid,tid){
   params += '&taskCategory=' + catid;
   params += '&uname=' + uname;
   params += '&tworkers_id=' + ready_id;
-  ////console.log(url);
-  // //////console.log(user_id);
-  // console.log(val);
-  //console.log(owner);
-  //console.log(params);
+
 if(val.length < 20){
-  // var err = document.getElementById("err"+tid);
-  // console.log(err);
-  // err.innerhtml = "PLease give more detail about your task";
   alert("Please give more detail of your task");
 }else{
    sendTaskAjax(url, method, params);

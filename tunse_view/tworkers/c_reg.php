@@ -157,7 +157,7 @@ include 'includes/header.php';
                                             <input class="form-control" id="email" name="email" type="email" required="">
                                         </div>
                                     </div>
-                                </div><!-- /form-group --> 
+                                </div><!-- /form-group -->
 
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label" for="address">Description</label>
@@ -249,10 +249,6 @@ include 'includes/header.php';
 <script src="asset/scripts/37a77790.vendor-table.js"></script>
 <script src="asset/scripts/1581b2aa.vendor-maps.js"></script>
 <script src="asset/scripts/5f4fd25b.vendor-util.js"></script>
-
-
-
-
 <!-- required stilearn template js -->
 <script src="asset/scripts/5917523f.main.js"></script>
 <!-- This scripts will be reload after pjax or if popstate event is active (use with class .re-execute) -->

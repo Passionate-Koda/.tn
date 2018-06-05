@@ -12,7 +12,6 @@ if(isset($_SESSION['u_id'])){
   $getInfo = getUser($econn, $sid);
   extract($getInfo);
 }
-
 if(isset($_GET['id'])){
   $getid = $_GET['id'];
   setReadNotification($econn, $getid );
@@ -79,7 +78,7 @@ include 'includes/header.php';
 
                                              <div class="clearfix">
                                                  <div class="pull-right">
-                                                        <span>Add Contact <?php echo $uname ?>?</span><button onclick="addContact('<?php echo $sid ?>', '<?php echo $task_category ?>','<?php echo $uname ?>','<?php echo $tworkers_phonenumber ?>', '<?php echo $tworkers_hashid ?>', 'Tworker')"  id="msg" type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                                                        <!-- <span>Add Contact <?php// echo $uname ?>?</span><button onclick="addContact('<?php //echo $sid ?>', '<?php// echo $task_category ?>','<?php //echo $uname ?>','<?php //echo $tworkers_phonenumber ?>', '<?php// echo $tworkers_hashid ?>', 'Tworker')"  id="msg" type="button" class="btn btn-primary" data-dismiss="modal">Add</button> -->
                                                  </div>
                                              </div>
 

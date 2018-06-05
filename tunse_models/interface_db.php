@@ -6,8 +6,7 @@ define("IDBPASS", 'dre');
 try {
   $iconn = new PDO('mysql:host=localhost; dbname='.IDBNAME, IDBUSER, IDBPASS);
 
-  $iconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
+  $iconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e) {
  echo $e->getMessage();
 }
-
