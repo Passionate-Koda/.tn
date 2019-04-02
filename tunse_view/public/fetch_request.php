@@ -17,7 +17,7 @@ while($row = $stmt->fetch(PDO::FETCH_BOTH)){
 }
 $tw = implode(',', $tworkerid);
 // var_dump($tworkerid);
-$range = 30;
+$range = 3000;
 if(isset($_POST['range'])){
   if(isset($_POST['rating'])){
     $filter = "tworkers_rating DESC";

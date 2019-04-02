@@ -16,6 +16,37 @@ function doesEmailExist($dbconn, $input){
   }
   return $result;
 }
+function insert($conn, $table, $parameters){
+
+array_pop($parameters);
+  // var_dump($parameters);
+  $sql = sprintf('INSERT INTO %s (%s) VALUES(%s)',
+      $table,
+      implode(', ',array_keys($parameters)), ':'.implode(',:',array_keys($parameters))
+  );
+  // die(var_dump($sql));
+$stmt =  $conn->prepare($sql);
+$stmt->execute($parameters);
+}
+
+function insertSafe($conn, $table, $parameters){
+try {
+  $sql = sprintf('INSERT INTO %s (%s) VALUES(%s)',
+      $table,
+      implode(', ',array_keys($parameters)), ':'.implode(',:',array_keys($parameters))
+  );
+  // die(var_dump($sql));
+$stmt =  $conn->prepare($sql);
+$stmt->execute($parameters);
+} catch (PDOException $e) {
+  die("Error");
+}
+
+
+  // var_dump($parameters);
+
+}
+
 function getContactID($dbconn, $co,$chid){
 
   $state = $dbconn->prepare("SELECT * FROM contacts WHERE contact_owner = :sid AND contact_hash_id = :chid");
@@ -203,6 +234,17 @@ function authenticateTworker($url){
 function doesPhoneNumberExist($dbconn, $input){
   $result = false;
   $stmt = $dbconn->prepare("SELECT * FROM tworkers WHERE tworkers_phonenumber = :tp");
+  $stmt->bindParam(":tp", $input);
+  $stmt->execute();
+  $count = $stmt->rowCount();
+  if($count>0){
+    $result = true;
+  }
+  return $result;
+}
+function doesDirectoryExist($dbconn, $input){
+  $result = false;
+  $stmt = $dbconn->prepare("SELECT * FROM directory WHERE tworkers_hash_id = :tp");
   $stmt->bindParam(":tp", $input);
   $stmt->execute();
   $count = $stmt->rowCount();

@@ -34,9 +34,33 @@ if(empty($_POST['review'])){
   $error['review'] = "Please Enter Review";
 }
 if(empty($error)){
+
+
+
   $clean = array_map('trim', $_POST);
   enterReview($econn,$clean,$sid,$tworkers_hashid);
 }
+}
+
+if(array_key_exists('addT', $_POST)){
+  $message = [];
+
+if(doesDirectoryExist($econn,$tworkers_hashid)){
+  $message['message'] =  "You have already added this Tworker to your directory";
+}else {
+  // code...
+  $new['directory_owner'] =  $_SESSION['u_id'];
+  $new['date_created'] =  date("Y-m-d");
+  $new['time_created'] =  date("h:i:s");
+  $new['tworkers_hash_id'] =  $tworkers_hashid;
+
+    insertSafe($econn, 'directory',$new);
+    header("Location:directory");
+
+}
+
+
+
 }
 ?>
 
@@ -135,6 +159,11 @@ font-family: FontAwesome;
   <!-- /content-control -->
 
   <div class="content-body">
+    <?php if(isset($message['message'])){ ?>
+<div class="well">
+  <p><?php echo $message['message'] ?></p>
+</div>
+    <?php } ?>
     <div class="col-md-4">
       <div class="c-content">
         <div class="c-header">
@@ -149,13 +178,16 @@ font-family: FontAwesome;
             <h3><span class="flaticon-user"><span><?php echo $uname ?></h3>
 
           </div>
-          <div class="title-name" style="left:70%">
-            <button class="btn btn-default" data-toggle="modal" data-target="#customModal2">Review</button>
+          <div class="title-name" style="left:50%">
+            <button class="btn btn-default btn-xs" data-toggle="modal" data-target="#customModal3">Add To Directory</button>
+          </div>
+          <div class="title-name" style="left:80%">
+            <button class="btn btn-default btn-xs" data-toggle="modal" data-target="#customModal2">Review</button>
           </div>
           <div class="title-name" style="left:30%">
             <?php
             $cidd = getContactID($econn,$_GET['s'],$_GET['r']);
-             echo '<button class="btn btn-default"><a href="contact?o='.$_GET['s'].'&t='.$_GET['r'].'&i='.$cidd.'">View Info<a/></button>' ?>
+             echo '<button class="btn btn-default btn-xs"><a href="contact?o='.$_GET['s'].'&t='.$_GET['r'].'&i='.$cidd.'">View Info<a/></button>' ?>
           </div>
 
 
@@ -190,6 +222,29 @@ font-family: FontAwesome;
                     <textarea class="form-control" name="review" rows="8" cols="auto" required></textarea>
                     <input class="form-control" type="submit" name="submit" value="Review">
                     </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+          <div class="modal modal-center modal-fullwidth fade" id="customModal3" tabindex="-1" role="dialog" aria-labelledby="customModal3Label" aria-hidden="true">
+            <div  class="modal-dialog animated bounceIn">
+              <div class="modal-content bg-darknight">
+                <div class="modal-body text-white">
+                  <div class="" style="text-align: center">
+                    <hr>
+                    <p><img style=" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 350px;max-width: 350px;" src="<?php echo $tworkers_image ?>" style="height: 100px; width: 150px" class="img-responsive" alt="Fountain" class="img-rounded img-responsive"></p>
+                    <hr>
+                    <h1>Add Tworker to Directory</h1>
+                    <form action="" method="post">
+
+
+                      <div class="well">
+                        <p style="color:black">You should add this tworker to your directory if the tworkers has satisfied your expectation and you will like to use this tworker later</p>
+                      </div>
+                    <input class="btn-default btn-sm" type="submit" name="addT" value="Add to Directory">
+
                     </form>
                   </div>
                 </div>
