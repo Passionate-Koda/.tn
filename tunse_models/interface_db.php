@@ -1,7 +1,7 @@
 <?php
 define("IDBNAME", 'tunse_interface_db');
 define("IDBUSER", 'root');
-define("IDBPASS", 'dre');
+define("IDBPASS", 'vagrant');
 
 try {
   $iconn = new PDO('mysql:host=localhost; dbname='.IDBNAME, IDBUSER, IDBPASS);
