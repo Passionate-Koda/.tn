@@ -2,7 +2,7 @@
 
 define("DBNAME", 'tunse_entity_db');
 define("DBUSER", 'root');
-define("DBPASS", 'dre');
+define("DBPASS", 'vagrant');
 
 try {
   $econn = new PDO('mysql:host=localhost;dbname='.DBNAME, DBUSER, DBPASS);

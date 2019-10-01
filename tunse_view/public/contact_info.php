@@ -89,13 +89,13 @@ include 'includes/header.php';
 
 
                          </div>
-                         
+
                          <div class="name-holder">
                            <p><?php echo $cname ?></p>
                          </div>
-                         
+
                        </div>
-                       
+
 
                        <div class="info">
                          <ul class="directory-holder">
@@ -149,18 +149,18 @@ include 'includes/header.php';
                                     <div class="modal-content bg-darknight" style="height:auto">
                                         <div class="modal-body text-white">
                                           <div class="" style="text-align: center">
-                                              
+
                                           <div id="map" style="width:100%; height:300px; margin-left: 10px; " >
 
                                           </div>
-                             
-                                               
-                                           
+
+
+
 
 
                                           </div>
 
-                                            
+
 
                                                          </div>
 
@@ -188,7 +188,7 @@ include 'includes/header.php';
                  </div><!--/content-body -->
 
              </div><!--/content -->
-           
+
            </section>
 
         <!--/content section -->
@@ -234,20 +234,20 @@ include 'includes/header.php';
          </script>
          <script>
          function initMap() {
-           var uluru = {lat:<?php echo $tworkers_lat ?>, lng:<?php echo $tworkers_long ?>};
+           var point = {lat:<?php echo $tworkers_lat ?>, lng:<?php echo $tworkers_long ?>};
            var map = new google.maps.Map(document.getElementById('map'), {
              zoom: 17,
-             center: uluru
+             center: point
            });
            var marker = new google.maps.Marker({
-             position: uluru,
+             position: point,
              map: map
            });
          }
          </script>
          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCScwCRZOo5trTCzyk9vqNbhFAkT4-cgRU&callback=initMap"
          async defer></script>
-         <script type="text/javascript" src="js/contactAjax.js">
+         <script type="text/javascript" src="/js/contactAjax.js">
          </script>
 
      </body>

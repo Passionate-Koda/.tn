@@ -46,6 +46,10 @@ if($page == "home"){    ?>
 
 <body onpageshow="getNofication('<?php echo $hash_id ?>');getNoficationCount('<?php echo $hash_id ?>');getContact();">
 
+<?php  }elseif($page == "user_directory"){?>
+
+<body onpageshow="getNofication('<?php echo $hash_id ?>');getNoficationCount('<?php echo $hash_id ?>');getDirectory();">
+
 
 <?php }elseif($page == "task"){ ?>
 <body onpageshow="getNofication();getNoficationCount(); updateNotif('<?php echo $getid ?>');getAcceptedTaskCount();getDeclinedTaskCount()">

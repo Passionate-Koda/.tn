@@ -382,8 +382,15 @@ case "contact":
 include APP_PATH."/tunse_view/public/contacts.php";
 break;
 
+case "directory":
+include APP_PATH."/tunse_view/public/directory.php";
+break;
+
 case "contact?o=$oValue&t=$tValue&i=$iValue":
 include APP_PATH."/tunse_view/public/contact_info.php";
+break;
+case "directory?o=$oValue&t=$tValue":
+include APP_PATH."/tunse_view/public/directory_info.php";
 break;
 
 case "st_ajax":
@@ -415,6 +422,10 @@ break;
 
 case "getContact":
 include APP_PATH."/tunse_view/public/ajax_users_requests/get_contact.php";
+break;
+
+case "getDirectory":
+include APP_PATH."/tunse_view/public/ajax_users_requests/get_directory.php";
 break;
 case "getContactForMessage":
 include APP_PATH."/tunse_view/public/ajax_users_requests/get_message_contact.php";
